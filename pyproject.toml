@@ -1,0 +1,29 @@
+[project]
+name = "hyperion-node"
+version = "0.1.1"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Arian-Ott", email = "arian.ott@ieee.org" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "click>=8.3.1",
+    "pyartnet>=2.0",
+    "requests>=2.32.5",
+    "websockets>=16.0",
+]
+
+[project.scripts]
+hyperion-node = "hyperion_node.main:cli"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "pytest-xdist>=3.8.0",
+    "ruff>=0.14.11",
+]
