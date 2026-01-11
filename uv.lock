@@ -68,12 +68,13 @@ wheels = [
 
 [[package]]
 name = "hyperion-node"
-version = "0.1.0"
+version = "0.1.1"
 source = { editable = "." }
 dependencies = [
     { name = "click" },
     { name = "pyartnet" },
     { name = "requests" },
+    { name = "toml" },
     { name = "websockets" },
 ]
 
@@ -89,6 +90,7 @@ requires-dist = [
     { name = "click", specifier = ">=8.3.1" },
     { name = "pyartnet", specifier = ">=2.0" },
     { name = "requests", specifier = ">=2.32.5" },
+    { name = "toml", specifier = ">=0.10.2" },
     { name = "websockets", specifier = ">=16.0" },
 ]
 
@@ -224,6 +226,15 @@ wheels = [
     { url = "http://10.0.0.215:3141/root/pypi/+f/337/c5dd11f16ee52/ruff-0.14.11-py3-none-win32.whl", hash = "sha256:337c5dd11f16ee52ae217757d9b82a26400be7efac883e9e852646f1557ed841" },
     { url = "http://10.0.0.215:3141/root/pypi/+f/f98/1cea63d08456b/ruff-0.14.11-py3-none-win_amd64.whl", hash = "sha256:f981cea63d08456b2c070e64b79cb62f951aa1305282974d4d5216e6e0178ae6" },
     { url = "http://10.0.0.215:3141/root/pypi/+f/649/fb6c9edd7f751/ruff-0.14.11-py3-none-win_arm64.whl", hash = "sha256:649fb6c9edd7f751db276ef42df1f3df41c38d67d199570ae2a7bd6cbc3590f0" },
+]
+
+[[package]]
+name = "toml"
+version = "0.10.2"
+source = { registry = "http://10.0.0.215:3141/root/pypi/+simple/" }
+sdist = { url = "http://10.0.0.215:3141/root/pypi/+f/b3b/da1d108d5dd99/toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f" }
+wheels = [
+    { url = "http://10.0.0.215:3141/root/pypi/+f/806/143ae5bfb6a3c/toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b" },
 ]
 
 [[package]]
